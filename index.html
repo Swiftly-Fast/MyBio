@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiftly Fast's Bio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General page setup */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: scroll; /* Enable vertical scrolling */
+            position: relative;
+            padding-top: 50px; /* Space for the navigation bar */
+        }
+
+        /* Navigation bar styling */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: #00FFEE;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: white;
+        }
+
+        /* Content section styling */
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 60px rgba(0, 255, 255, 0.4);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            margin-top: 60px; /* Adjusted for navigation bar */
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #00FFEE;
+            text-shadow: 3px 3px 20px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 255, 255, 0.5);
+            animation: glowAnimation 1.5s infinite alternate; /* Glow animation */
+        }
+
+        @keyframes glowAnimation {
+            0% {
+                text-shadow: 3px 3px 20px rgba(0, 255, 255, 1), 0 0 25px rgba(0, 255, 255, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 0.7);
+            }
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            line-height: 1.7;
+            color: #ddd;
+            text-align: left;
+        }
+
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        .content ul li {
+            margin: 10px 0;
+        }
+
+        /* Media query for smaller devices */
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+                width: 90%;
+            }
+
+            .content h1 {
+                font-size: 2rem;
+            }
+
+            .content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="socials.html">My Socials</a></li>
+            <li><a href="stuff.html">My Stuff</a></li>
+            <li><a href="games.html">Games I Play</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content">
+            <h1>Welcome to Swiftly Fast's Bio</h1>
+            <p>Hi, I'm Swiftly Fast, a passionate gamer, content creator, and tech enthusiast. This is my personal website where you can explore my socials, the games I play, and learn more about my projects and creations. I strive to bring a community of like-minded individuals together, and I’d love for you to join me on this journey!</p>
+
+            <p>Here’s a little more about me:</p>
+            <ul>
+                <li><strong>Gaming:</strong> I’m an avid gamer who enjoys a variety of games, from competitive multiplayer games like Fortnite and Minecraft, to immersive single-player games that tell a great story.</li>
+                <li><strong>Content Creation:</strong> As a content creator, I share my gaming experiences and other fun content on YouTube and TikTok. Join me for entertaining videos, gaming tips, and community events!</li>
+                <li><strong>Community:</strong> Building a positive and engaging community is one of my main goals. Whether it’s through Discord or collaborations with fellow creators, I’m always looking to connect with new people.</li>
+                <li><strong>Projects:</strong> I’m always working on exciting new projects! From game development to building useful bots for Discord, there’s always something cool in the works. Stay tuned for updates!</li>
+            </ul>
+
+            <p>Feel free to check out my socials, explore my games, and learn more about the projects I’m working on. Thanks for visiting!</p>
+        </section>
+    </main>
+</body>
+</html>

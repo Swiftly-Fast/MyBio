@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Socials</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General page setup */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0f0f0f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Cool animated background */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.3), rgba(0, 0, 0, 0.8));
+            animation: moveBackground 5s linear infinite;
+            z-index: -1; /* Keeps background behind content */
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        /* Navigation bar styling */
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: #00FFEE;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: white;
+        }
+
+        /* Styling for the content section */
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #00FFEE;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+
+        ul li a {
+            color: #00FFEE;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+
+        ul li a:hover {
+            color: #fff;
+            transform: scale(1.1);
+            text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
+        }
+
+        /* Media query for smaller devices */
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+                width: 90%;
+            }
+
+            .content h2 {
+                font-size: 2rem;
+            }
+
+            ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="socials.html">My Socials</a></li>
+            <li><a href="stuff.html">My Stuff</a></li>
+            <li><a href="games.html">Games I Play</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content">
+            <h2>My Socials</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/@Swiftly_Fast" target="_blank">YouTube</a></li>
+                <li><a href="https://www.tiktok.com/@swiftly_fast" target="_blank">TikTok</a></li>
+                <li>Discord: @Swiftlyfast</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

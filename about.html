@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: scroll;
+            position: relative;
+            padding-top: 60px;
+            background-image: radial-gradient(circle, rgba(0, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: #00FFEE;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: white;
+        }
+
+        /* Content Section Styling */
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 60px rgba(0, 255, 255, 0.4);
+            text-align: left;
+        }
+
+        h2, h3 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            color: white;
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.1rem;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        /* Image Container Styling */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+            overflow: hidden;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+            filter: blur(3px);
+        }
+
+        .image-container .tooltip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 18px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Bubble Styling */
+        .bubble {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: rgba(0, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: moveBubbles 6s linear infinite;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        .bubble:nth-child(1) {
+            top: 10%;
+            left: 10%;
+        }
+
+        .bubble:nth-child(2) {
+            top: 30%;
+            right: 5%;
+        }
+
+        .bubble:nth-child(3) {
+            bottom: 20%;
+            left: 30%;
+        }
+
+        .bubble:nth-child(4) {
+            top: 50%;
+            left: 50%;
+        }
+
+        @keyframes moveBubbles {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(50px, 50px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+                width: 90%;
+            }
+
+            h2, h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="socials.html">My Socials</a></li>
+                <li><a href="stuff.html">My Stuff</a></li>
+                <li><a href="games.html">Games I Play</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>About Me</h2>
+            <p>I am a web designer, swimmer, and bot developer. I have a passion for creating and improving online tools and spaces, and I dream of traveling to some of the most vibrant and exciting cities in the world.</p>
+            <p>I love developing web pages like this one because I can make some really cool things! But my favorite has to be bot development as it is super cool, and you can do way more things than developing a website. I even own a bot which you can find in the My Stuff section!</p>
+            <p>Here are some amazing places I dream of visiting when I get older:</p>
+
+            <h3>Places I Want to Visit</h3>
+            <div class="images">
+                <!-- Miami -->
+                <div class="image-container">
+                    <img src="images/gettyimages-1376792437-640x640.jpg" alt="Miami">
+                    <div class="tooltip">
+                        <strong>Miami</strong>
+                        <p>Miami is a coastal city in Florida, famous for its stunning beaches, vibrant nightlife, and cultural diversity. Known as a global destination for tourism, it also offers rich Latin-American influences in its food and art scenes.</p>
+                    </div>
+                </div>
+
+                <!-- Dubai -->
+                <div class="image-container">
+                    <img src="images/istockphoto-467829216-612x612.jpg" alt="Dubai">
+                    <div class="tooltip">
+                        <strong>Dubai</strong>
+                        <p>Dubai is a luxurious city in the United Arab Emirates, recognized for its futuristic skyscrapers, desert safaris, and world-class shopping. The city is a symbol of innovation and grandeur, attracting millions of visitors each year.</p>
+                    </div>
+                </div>
+
+                <!-- Tokyo -->
+                <div class="image-container">
+                    <img src="images/photo-1551641506-ee5bf4cb45f1.jpeg" alt="Tokyo">
+                    <div class="tooltip">
+                        <strong>Tokyo</strong>
+                        <p>Tokyo, the capital of Japan, blends tradition and modernity seamlessly. It features historic temples, cutting-edge technology, and iconic landmarks like the Tokyo Tower. It’s a city that never stops innovating or inspiring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bubble Effects -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</body>
+</html>

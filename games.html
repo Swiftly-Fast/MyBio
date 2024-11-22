@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games I Play</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1a1a1a;  /* Dark background */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-y: scroll;
+            position: relative;
+            padding-top: 60px;  /* Space for the navigation bar */
+            background-image: radial-gradient(circle, rgba(0, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu li {
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: #00FFEE;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: white;
+        }
+
+        /* Content Section Styling */
+        .content {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 60px rgba(0, 255, 255, 0.4);
+            text-align: left;
+        }
+
+        .non-bubble {
+            font-weight: bold;
+            color: white;
+            font-size: 2rem;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);  /* Dark background for sections */
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            z-index: 2;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            font-weight: normal;
+            color: white;
+            z-index: 2;
+        }
+
+        /* Bubble Styling */
+        .bubble {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: rgba(0, 255, 255, 0.5);  /* Blueish bubbles */
+            border-radius: 50%;
+            animation: moveBubbles 6s linear infinite;
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+            z-index: 1;
+        }
+
+        .bubble:hover {
+            transform: scale(1.2);
+            filter: blur(4px);
+            z-index: 10;
+        }
+
+        .bubble:nth-child(1) {
+            top: 10%;
+            left: 10%;
+        }
+
+        .bubble:nth-child(2) {
+            top: 30%;
+            right: 5%;
+        }
+
+        .bubble:nth-child(3) {
+            bottom: 20%;
+            left: 30%;
+        }
+
+        .bubble:nth-child(4) {
+            top: 50%;
+            left: 50%;
+        }
+
+        @keyframes moveBubbles {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(50px, 50px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+                width: 90%;
+            }
+
+            .section h3 {
+                font-size: 1.6rem;
+            }
+
+            .section p {
+                font-size: 1rem;
+            }
+
+            .non-bubble {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="socials.html">My Socials</a></li>
+                <li><a href="stuff.html">My Stuff</a></li>
+                <li><a href="games.html">Games I Play</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="non-bubble">
+                Games I Play
+            </div>
+
+            <!-- Gorilla Tag -->
+            <div class="section">
+                <h3>Gorilla Tag</h3>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <p>A thrilling VR game where players take on the role of gorillas and use their arms to navigate a virtual world. Whether you're climbing, jumping, or evading, Gorilla Tag offers intense multiplayer fun.</p>
+                <p>I own a competitive Gorilla Tag team called the <strong>Apex Apes</strong>. Join us on Discord: <a href="https://discord.gg/FQX6bfSWDb" target="_blank">Apex Apes Discord</a></p>
+            </div>
+
+            <!-- Forza Horizon 5 -->
+            <div class="section">
+                <h3>Forza Horizon 5</h3>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <p>An open-world racing game set in the vibrant and diverse landscapes of Mexico. Customize your cars, race in dynamic events, and explore breathtaking environments at your own pace.</p>
+                <p>Forza Horizon 5 is one of my go-to games for relaxing and competitive racing experiences.</p>
+            </div>
+
+            <!-- Minecraft -->
+            <div class="section">
+                <h3>Minecraft</h3>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <p>The ultimate sandbox game that lets you create, explore, and survive in infinite worlds. From building epic structures to battling mobs, Minecraft offers endless possibilities for creativity and adventure.</p>
+                <p>I enjoy both survival and creative modes, often collaborating with friends to build amazing projects.</p>
+            </div>
+
+            <!-- Fortnite -->
+            <div class="section">
+                <h3>Fortnite</h3>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <p>A fast-paced battle royale game combining building mechanics, strategy, and intense action. With frequent updates and new content, Fortnite remains a favorite among players worldwide.</p>
+                <p>I love teaming up with friends for squad victories or exploring new limited-time events.</p>
+            </div>
+
+            <!-- Orion Drift -->
+            <div class="section">
+                <h3>Orion Drift</h3>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <div class="bubble"></div>
+                <p>An immersive space exploration game with strategic gameplay and stunning visuals. Pilot your spacecraft, explore unknown galaxies, and forge alliances in this captivating sci-fi adventure.</p>
+                <p>Orion Drift is perfect for when I want a mix of strategy and exploration in a futuristic setting.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript to handle hover effects for bubbles
+        const bubbles = document.querySelectorAll('.bubble');
+        bubbles.forEach(bubble => {
+            bubble.addEventListener('mouseenter', () => {
+                // Blur other bubbles when one is hovered
+                bubbles.forEach(b => {
+                    if (b !== bubble) {
+                        b.style.filter = 'blur(4px)';
+                    }
+                });
+            });
+
+            bubble.addEventListener('mouseleave', () => {
+                // Remove blur effect when hover ends
+                bubbles.forEach(b => {
+                    b.style.filter = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
